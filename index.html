@@ -17,6 +17,7 @@
       import { PrivacyPolicy } from '/src/pages/PrivacyPolicy.js';
       import { initScrollAnimations } from '/src/utils/animations.js';
       import { initNavigation } from '/src/utils/navigation.js';
+      import { initContactForm } from '/src/utils/contactForm.js';
 
       const routes = {
         '/': Home,
@@ -39,6 +40,10 @@
           // Initialize animations after content is loaded
           initScrollAnimations();
           initNavigation();
+          
+          if (path === '/contact') {
+            initContactForm();
+          }
         } catch(e) {
           console.error(e);
           root.innerHTML = "<h1>Error loading page</h1>";

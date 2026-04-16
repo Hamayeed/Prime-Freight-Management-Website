@@ -1,0 +1,216 @@
+/* ============================================================
+   CONTACT FORM STYLES
+   Consistent with PFM dark design system. No layout changes.
+   ============================================================ */
+
+/* ---- Form wrapper card ---- */
+.contact-form-card {
+  max-width: 620px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  text-align: left;
+  padding: var(--spacing-xl) 48px;
+  border-radius: var(--border-radius-lg);
+  background: var(--bg-card);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--glass-shadow);
+}
+
+/* ---- Two-column grid row ---- */
+.cf-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-md);
+}
+
+/* ---- Field group ---- */
+.cf-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: var(--spacing-md);
+}
+
+.cf-field:last-child {
+  margin-bottom: 0;
+}
+
+/* ---- Label ---- */
+.cf-label {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
+.cf-label .required-star {
+  color: var(--primary-color);
+  margin-left: 2px;
+}
+
+.cf-label .optional-tag {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--text-muted);
+  text-transform: none;
+  letter-spacing: 0;
+  margin-left: 4px;
+  opacity: 0.6;
+}
+
+/* ---- Inputs & Textarea ---- */
+.cf-input,
+.cf-textarea {
+  width: 100%;
+  padding: 13px 16px;
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  color: var(--text-light);
+  font-family: var(--font-main);
+  font-size: 1rem;
+  line-height: 1.5;
+  transition: border-color var(--transition-speed), box-shadow var(--transition-speed);
+  outline: none;
+  -webkit-appearance: none;
+}
+
+.cf-input::placeholder,
+.cf-textarea::placeholder {
+  color: rgba(148, 163, 184, 0.45);
+}
+
+.cf-input:focus,
+.cf-textarea:focus {
+  border-color: rgba(39, 160, 122, 0.6);
+  box-shadow: 0 0 0 3px rgba(39, 160, 122, 0.12);
+}
+
+.cf-textarea {
+  resize: vertical;
+  min-height: 110px;
+}
+
+/* ---- Error state ---- */
+.cf-input.input-error,
+.cf-textarea.input-error {
+  border-color: rgba(248, 113, 113, 0.7);
+  box-shadow: 0 0 0 3px rgba(248, 113, 113, 0.1);
+}
+
+/* ---- Error message ---- */
+.cf-error {
+  font-size: 0.82rem;
+  color: #f87171;
+  display: none;
+  align-items: center;
+  gap: 4px;
+  min-height: 18px;
+}
+
+.cf-error.visible {
+  display: flex;
+}
+
+/* ---- Divider ---- */
+.cf-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border-color), transparent);
+  margin: var(--spacing-md) 0;
+  border: none;
+}
+
+/* ---- Submit area ---- */
+.cf-submit-area {
+  margin-top: var(--spacing-md);
+}
+
+/* ---- Submit button spinner ---- */
+.cf-spinner {
+  display: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(6, 23, 17, 0.3);
+  border-top-color: var(--bg-darker);
+  border-radius: 50%;
+  animation: cf-spin 0.7s linear infinite;
+  margin-right: 8px;
+  flex-shrink: 0;
+}
+
+@keyframes cf-spin {
+  to { transform: rotate(360deg); }
+}
+
+#cf-submit {
+  width: 100%;
+  font-size: 1.05rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+#cf-submit:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none !important;
+}
+
+/* ---- Status Banner ---- */
+.cf-banner {
+  display: none;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px 20px;
+  border-radius: var(--border-radius);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: var(--spacing-md);
+  border: 1px solid transparent;
+}
+
+.cf-banner.visible {
+  display: flex;
+}
+
+.cf-banner--success {
+  background: rgba(39, 160, 122, 0.1);
+  border-color: rgba(39, 160, 122, 0.35);
+  color: #6ee7b7;
+}
+
+.cf-banner--error {
+  background: rgba(248, 113, 113, 0.08);
+  border-color: rgba(248, 113, 113, 0.3);
+  color: #fca5a5;
+}
+
+.cf-banner-text {
+  flex: 1;
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 680px) {
+  .contact-form-card {
+    padding: var(--spacing-lg) var(--spacing-md);
+    border-radius: var(--border-radius);
+  }
+
+  .cf-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-form-card {
+    padding: var(--spacing-md);
+  }
+}
