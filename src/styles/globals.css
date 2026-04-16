@@ -10,6 +10,7 @@
 @import './components/cta.css';
 @import './pages/services-page.css';
 @import './pages/about-page.css';
+@import './pages/privacy-page.css';
 
 * {
   margin: 0;

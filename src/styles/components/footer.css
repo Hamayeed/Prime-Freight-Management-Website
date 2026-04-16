@@ -9,8 +9,9 @@
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: 1.6fr repeat(3, 1fr);
   gap: var(--spacing-lg);
+  align-items: start;
 }
 
 .footer-brand {
@@ -27,6 +28,8 @@
 
 .footer-brand p {
   color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
 }
 
 .footer-links-col {
@@ -39,17 +42,44 @@
   color: var(--text-light);
   margin-bottom: var(--spacing-sm);
   font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
 }
 
 .footer-links-col a {
   color: var(--text-muted);
   transition: color var(--transition-speed);
+  font-size: 0.95rem;
 }
 
 .footer-links-col a:hover {
   color: var(--accent-color);
 }
 
+/* ---- Address block ---- */
+.footer-address {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-style: normal;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.65;
+  margin-top: 2px;
+}
+
+.footer-address svg {
+  color: var(--primary-color);
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.footer-address span {
+  color: var(--text-muted);
+}
+
+/* ---- Bottom bar ---- */
 .footer-bottom {
   margin-top: var(--spacing-xl);
   padding-top: var(--spacing-md);
@@ -57,4 +87,44 @@
   text-align: center;
   font-size: 0.875rem;
   color: var(--text-muted);
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 1024px) {
+  .footer-content {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xl) var(--spacing-lg);
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--spacing-lg);
+  }
+
+  .footer-brand p {
+    flex: 1;
+    min-width: 220px;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+
+  .footer-brand {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .site-footer {
+    padding: var(--spacing-lg) var(--spacing-md);
+  }
 }

@@ -1,0 +1,71 @@
+{
+    "title": "Privacy Policy",
+    "intro": "At Prime Freight Management, safeguarding your privacy is paramount. Our commitment to ensuring the confidentiality and security of your personal data is reflected in this Privacy Policy, which delineates the measures we undertake to collect, utilize, disclose, and protect your information when you engage with our services.",
+    "sections": [
+        {
+            "id": 1,
+            "heading": "Information Gathering",
+            "content": "Your interaction with our website, applications, or other services may entail the collection of personal information.",
+            "list": [
+                "Name",
+                "Contact details (such as email address, phone number)",
+                "Address",
+                "Payment particulars"
+            ],
+            "footer": "We gather this data to enhance our services, facilitate transactions, engage in communication with you, and adhere to legal obligations."
+        },
+        {
+            "id": 2,
+            "heading": "Information Utilization",
+            "content": "The information we collect serves multiple purposes, including but not limited to:",
+            "list": [
+                "Provision, upkeep, and enhancement of our services",
+                "Transaction processing",
+                "Correspondence regarding your account and our services",
+                "Addressing your inquiries and requests",
+                "Disseminating crucial notifications and updates",
+                "Conducting research and analysis to refine our services"
+            ]
+        },
+        {
+            "id": 3,
+            "heading": "Information Disclosure",
+            "content": "We do not engage in selling, trading, or transferring your personal information to third parties without your explicit consent.",
+            "footer": "Furthermore, we ensure that no mobile information is shared with third-party affiliates for marketing or promotional activities. This assurance excludes text messaging originator opt-in data and consent, which remains confidential and unshared with any third parties."
+        },
+        {
+            "id": 4,
+            "heading": "Data Security",
+            "content": "While we implement reasonable measures to safeguard your personal data against unauthorized access, use, disclosure, alteration, or destruction, no method of transmission over the internet or electronic storage is entirely foolproof.",
+            "footer": "Consequently, we cannot guarantee the absolute security of your information."
+        },
+        {
+            "id": 5,
+            "heading": "Children’s Privacy",
+            "content": "Our services are not intended for individuals under the age of 13, and we do not knowingly collect personal information from such individuals.",
+            "footer": "If we become aware of inadvertently collecting personal data from a child under 13 without parental consent, we will promptly take steps to remove that information from our servers."
+        },
+        {
+            "id": 6,
+            "heading": "Amendments to this Privacy Policy",
+            "content": "We retain the right to amend this Privacy Policy as necessary.",
+            "footer": "In the event of substantial changes, we will notify you via email or by posting a notice on our website before the modifications take effect. We encourage you to periodically review this Privacy Policy for any updates."
+        },
+        {
+            "id": 7,
+            "heading": "Your Privacy Rights",
+            "content": "You have rights regarding your personal information, including access, modification, and deletion.",
+            "footer": "Additional rights may apply based on your jurisdiction. We do not share or sell SMS opt-in data or phone numbers for the purpose of SMS."
+        },
+        {
+            "id": 8,
+            "heading": "Contact Us",
+            "content": "Should you have any inquiries or concerns regarding this Privacy Policy or our handling of your personal information, please contact us:",
+            "list": [
+                "Phone: +1 (713)-309-6606",
+                "Email: Info@primefreight.co"
+            ]
+        }
+    ],
+    "closing": "By utilizing our services, you implicitly agree to abide by the terms outlined in this Privacy Policy. If you disagree with these terms, we kindly ask you to refrain from using our services."
+}
