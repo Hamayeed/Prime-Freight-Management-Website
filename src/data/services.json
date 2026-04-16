@@ -1,0 +1,76 @@
+[
+  {
+    "id": "1",
+    "title": "Full-Service Truck Dispatching",
+    "description": "Our premium truck dispatch service provides complete operations management, including high-paying load sourcing, aggressive rate negotiation, and dedicated 24/7 support for owner-operators.",
+    "badge": "Most Popular",
+    "cta": "Get Started",
+    "features": [
+      "Strategic Load Sourcing",
+      "Aggressive Rate Negotiation",
+      "Dedicated 1-on-1 Support",
+      "No Upfront Fees"
+    ]
+  },
+  {
+    "id": "2",
+    "title": "Strategic Freight Dispatch",
+    "description": "Maximize your revenue per mile with our freight dispatch solutions. We optimize your routes to minimize deadhead and keep your trucks moving in the most profitable lanes.",
+    "cta": "Optimize Now",
+    "features": [
+      "Route Optimization",
+      "Deadhead Minimization",
+      "Market Density Tracking",
+      "Lane Analysis"
+    ]
+  },
+  {
+    "id": "3",
+    "title": "Logistics Support & Back-Office",
+    "description": "Reduce your administrative burden with professional logistics support. We handle invoicing, broker setup, and document management so you can stay focused on driving.",
+    "cta": "Learn More",
+    "features": [
+      "Invoicing & Direct Billing",
+      "New Broker Setup",
+      "Digital Document Management",
+      "Factoring Assistance"
+    ]
+  },
+  {
+    "id": "4",
+    "title": "Broker Credit & Compliance",
+    "description": "Work with confidence. We perform rigorous broker credit checks and verify payment history to protect your business from financial risks and unreliable partners.",
+    "cta": "View Details",
+    "features": [
+      "Creditworthiness Verification",
+      "Payment History Review",
+      "Financial Risk Mitigation",
+      "Compliance Monitoring"
+    ]
+  },
+  {
+    "id": "5",
+    "title": "Insurance & Safety Consulting",
+    "description": "Ensure your fleet stays compliant and protected. We provide guidance on insurance brokering and safety compliance to minimize risks and lower your overhead costs.",
+    "cta": "Get Quote",
+    "features": [
+      "Insurance Selection Support",
+      "Safety Policy Development",
+      "Compliance Auditing",
+      "Risk Assessment"
+    ]
+  },
+  {
+    "id": "6",
+    "title": "24/7 Emergency Dispatch",
+    "description": "Reliable support when you need it most. Our 24/7 truck dispatch assistance handles load updates, emergency issues, and broker communication around the clock.",
+    "badge": "Essential",
+    "cta": "Support Now",
+    "features": [
+      "Round-the-clock Help Line",
+      "Emergency Load Handling",
+      "Real-time Issue Tracking",
+      "Direct Broker Interface"
+    ]
+  }
+]

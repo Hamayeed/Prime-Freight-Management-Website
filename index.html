@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PFM Truck Dispatch - Reliable Dispatching Services</title>
+    <meta name="description" content="Professional truck dispatch services helping owner-operators and fleets maximize profits." />
+    <link rel="stylesheet" href="/src/styles/globals.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module">
+      import { Home } from '/src/pages/Home.js';
+      import { Services } from '/src/pages/Services.js';
+      import { About } from '/src/pages/About.js';
+      import { Contact } from '/src/pages/Contact.js';
+      import { PrivacyPolicy } from '/src/pages/PrivacyPolicy.js';
+      import { initScrollAnimations } from '/src/utils/animations.js';
+      import { initNavigation } from '/src/utils/navigation.js';
+
+      const routes = {
+        '/': Home,
+        '/services': Services,
+        '/about': About,
+        '/contact': Contact,
+        '/privacy-policy': PrivacyPolicy,
+      };
+
+      async function router() {
+        const path = window.location.pathname;
+        const page = routes[path] || routes['/'];
+        const root = document.getElementById('root');
+        
+        try {
+          root.innerHTML = typeof page.then === 'function' || page.constructor.name === 'AsyncFunction' 
+            ? await page() 
+            : page();
+          
+          // Initialize animations after content is loaded
+          initScrollAnimations();
+          initNavigation();
+        } catch(e) {
+          console.error(e);
+          root.innerHTML = "<h1>Error loading page</h1>";
+        }
+      }
+
+      window.addEventListener('popstate', router);
+      document.body.addEventListener('click', e => {
+        if (e.target.matches('a')) {
+          const href = e.target.getAttribute('href');
+          if (href && href.startsWith('/')) {
+            e.preventDefault();
+            history.pushState(null, null, href);
+            router();
+          }
+        }
+      });
+
+      router();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+[
+  {
+    "id": "1",
+    "name": "Adan Calderon",
+    "role": "Owner-Operator, Cal Transports Inc",
+    "text": "Way better planning, steady money, and I actually get more time at home now.",
+    "rating": 5
+  },
+  {
+    "id": "2",
+    "name": "Arturo Velazques",
+    "role": "Owner-Operator, A&A Express",
+    "text": "Got 2 trucks running the same round trip nonstop. Super consistent and no downtime.",
+    "rating": 5
+  },
+  {
+    "id": "3",
+    "name": "Jerold Roubik",
+    "role": "Fleet Owner, Roubik, INC",
+    "text": "Dan from PFM secured a dedicated lane for our operation, ensuring consistent freight flow and strong profitability across the fleet.",
+    "rating": 5
+  },
+  {
+    "id": "4",
+    "name": "German Guerrero",
+    "role": "Owner-Operator, GG Pride Deliver Services & Trucking LLC",
+    "text": "I’m picky with my RPM and they get it right. Rates have been solid every time.",
+    "rating": 5
+  },
+  {
+    "id": "5",
+    "name": "Mariam Rafat",
+    "role": "Fleet Owner, Madey Carrier Logistics LLC",
+    "text": "Managing 7 trucks is way easier with them. Everything just runs smoother.",
+    "rating": 5
+  },
+  {
+    "id": "6",
+    "name": "Xiwen Liang",
+    "role": "Owner-Operator, Global Star Freight",
+    "text": "Short 50-mile loads on a dedicated lane. Quick, easy, and keeps me moving.",
+    "rating": 5
+  },
+  {
+    "id": "7",
+    "name": "Ricardo Ortega",
+    "role": "Owner-Operator, Desert Moon Trucking",
+    "text": "Good loads, good rates. My truck stays busy, that’s all I need.",
+    "rating": 5
+  },
+  {
+    "id": "8",
+    "name": "Baptiste Milfort",
+    "role": "Owner-Operator, B2 Trucking LLC",
+    "text": "Super easy to work with. They take care of everything on the back end.",
+    "rating": 5
+  }
+]

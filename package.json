@@ -1,0 +1,16 @@
+{
+  "name": "pfm-truck-dispatch",
+  "version": "1.0.0",
+  "description": "Professional Truck Dispatch Service Website",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
+  },
+  "author": "",
+  "license": "ISC"
+}

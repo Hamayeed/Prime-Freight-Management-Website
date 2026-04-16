@@ -1,0 +1,186 @@
+/* Note: The page-hero-section classes are shared from services-page.css */
+
+.about-intro-section {
+  padding: var(--spacing-2xl) 0 80px 0;
+}
+
+.about-intro-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.about-section-heading {
+  font-size: 2.5rem;
+  font-family: var(--font-heading);
+  color: var(--text-light);
+  margin-bottom: var(--spacing-lg);
+  position: relative;
+}
+
+.about-text-block p {
+  font-size: 1.15rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: var(--spacing-md);
+}
+
+.about-mission-card {
+  padding: 40px;
+  border-radius: var(--border-radius-lg);
+  background: var(--bg-card);
+  border: 1px solid rgba(76, 214, 176, 0.2);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.mission-icon {
+  width: 64px;
+  height: 64px;
+  background: rgba(39, 160, 122, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--spacing-lg);
+}
+
+.about-mission-card h3 {
+  font-size: 1.8rem;
+  font-family: var(--font-heading);
+  color: var(--text-light);
+  margin-bottom: var(--spacing-sm);
+}
+
+.about-mission-card p {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Why Choose Us Section in About */
+.about-why-section {
+  padding: 80px 0 100px 0;
+}
+
+.about-why-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.about-why-subtext {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  max-width: 700px;
+  margin: 16px auto 0 auto;
+  line-height: 1.6;
+}
+
+.about-why-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-lg);
+  margin-top: 0;
+}
+
+.about-why-item {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  padding: 40px 36px;
+  border-radius: var(--border-radius-lg);
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-why-item:hover {
+  transform: translateY(-6px);
+  border-color: rgba(39, 160, 122, 0.35);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+}
+
+.about-why-item--highlight {
+  border-color: var(--primary-color);
+  background: linear-gradient(145deg, rgba(39, 160, 122, 0.08) 0%, var(--bg-card) 100%);
+  position: relative;
+}
+
+.about-why-item--highlight::before {
+  content: 'Our Promise';
+  position: absolute;
+  top: -12px;
+  left: 24px;
+  background: var(--primary-gradient);
+  color: var(--bg-darker);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 4px 14px;
+  border-radius: 50px;
+}
+
+.why-item-icon {
+  width: 56px;
+  height: 56px;
+  background: rgba(39, 160, 122, 0.08);
+  border: 1px solid rgba(39, 160, 122, 0.2);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--spacing-md);
+  transition: background 0.3s ease;
+}
+
+.about-why-item:hover .why-item-icon {
+  background: rgba(39, 160, 122, 0.15);
+}
+
+.about-why-item h3 {
+  font-size: 1.45rem;
+  color: var(--text-light);
+  margin-bottom: 12px;
+  font-family: var(--font-heading);
+}
+
+.about-why-item p {
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.about-why-bullets {
+  list-style: none;
+  margin-top: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding-top: var(--spacing-md);
+}
+
+.about-why-bullets li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.95rem;
+  color: var(--text-light);
+}
+
+.about-why-bullets li svg {
+  color: var(--primary-color);
+  flex-shrink: 0;
+}
+
+@media (max-width: 900px) {
+  .about-intro-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-why-grid {
+    grid-template-columns: 1fr;
+  }
+}

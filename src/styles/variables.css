@@ -1,0 +1,38 @@
+:root {
+  /* Brand extracted palette */
+  --primary-color: #27A07A;
+  --primary-gradient: linear-gradient(135deg, #3BBF95 0%, #27A07A 100%);
+  --secondary-color: #061711;
+  --accent-color: #27A07A;
+  
+  /* Dark mode backgrounds */
+  --bg-dark: #061711;
+  --bg-darker: #000000;
+  --bg-card: rgba(6, 23, 17, 0.7);
+  
+  /* Text */
+  --text-light: #F9F8F3;
+  --text-muted: #94A3B8;
+  
+  /* Borders and Shadows */
+  --border-color: rgba(249, 248, 243, 0.1);
+  --box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  --glass-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(249, 248, 243, 0.1);
+  
+  /* Typography */
+  --font-main: 'IBM Plex Sans', system-ui, sans-serif;
+  --font-heading: 'Taviraj', Georgia, serif;
+  
+  /* Spacing */
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 32px;
+  --spacing-xl: 64px;
+  --spacing-2xl: 120px;
+  
+  /* Layout */
+  --border-radius-sm: 6px;
+  --border-radius: 12px;
+  --border-radius-lg: 24px;
+  --transition-speed: 0.3s;
+}
