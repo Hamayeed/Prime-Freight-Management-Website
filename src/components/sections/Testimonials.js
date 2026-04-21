@@ -1,13 +1,8 @@
 import { Section } from '../ui/Section.js';
+import testimonialsData from '../../data/testimonials.json';
 
 export async function Testimonials() {
-  let testimonials = [];
-  try {
-    const response = await fetch('/src/data/testimonials.json');
-    testimonials = await response.json();
-  } catch(e) {
-    console.error('Failed to load testimonials', e);
-  }
+  const testimonials = testimonialsData;
   
   const testimonialsHtml = testimonials.map(t => `
     <div class="glass" style="padding: var(--spacing-lg); border-radius: var(--border-radius-lg); position: relative;">

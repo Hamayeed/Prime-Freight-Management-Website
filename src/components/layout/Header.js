@@ -5,7 +5,7 @@ export function Header() {
   return `
     <header class="site-header">
       <a href="/" class="site-logo">
-        <img src="/public/images/Logo-name.png" alt="${APP_NAME} Logo" />
+        <img src="/images/Logo-name.png" alt="${APP_NAME} Logo" />
       </a>
       ${Navbar()}
     </header>

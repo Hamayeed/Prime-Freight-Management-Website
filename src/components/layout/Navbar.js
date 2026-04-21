@@ -39,7 +39,7 @@ export function Navbar() {
     <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
     <div class="mobile-menu" id="mobileMenu">
       <div class="mobile-menu-header">
-        <img src="/public/images/Logo-name.png" alt="${APP_NAME} Logo" class="mobile-logo" />
+        <img src="/images/Logo-name.png" alt="${APP_NAME} Logo" class="mobile-logo" />
         <button class="close-menu" id="closeMenu" aria-label="Close Menu">&times;</button>
       </div>
       <ul class="mobile-nav-links">

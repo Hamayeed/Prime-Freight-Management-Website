@@ -17,7 +17,7 @@ export function About() {
     <main class="about-page-main">
       <!-- Top Hero Banner -->
       <section class="page-hero-section">
-        <div class="page-hero-bg" style="background-image: url('/public/images/about_hero_bg.png');"></div>
+        <div class="page-hero-bg" style="background-image: url('/images/about_hero_bg.png');"></div>
         <div class="page-hero-overlay"></div>
         <div class="container relative z-10">
           <h1 class="page-hero-title">About <span class="text-gradient">PFM</span></h1>

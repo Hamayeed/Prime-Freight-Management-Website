@@ -1,6 +1,7 @@
 import { Header } from '../components/layout/Header.js';
 import { Footer } from '../components/layout/Footer.js';
 import { setSEO } from '../utils/seo.js';
+import privacyData from '../data/privacy_policy.json';
 
 /* -------------------------------------------------------
    Helper: render a single privacy section card
@@ -47,14 +48,6 @@ export async function PrivacyPolicy() {
     description: 'Read the Privacy Policy for Prime Freight Management. Learn how we collect, use, and protect your personal data.',
     keywords: 'privacy policy, data protection, prime freight management privacy'
   });
-
-  let privacyData = { title: 'Privacy Policy', intro: '', sections: [], closing: '' };
-  try {
-    const response = await fetch('/src/data/privacy_policy.json');
-    privacyData = await response.json();
-  } catch (error) {
-    console.error('Failed to load privacy policy data', error);
-  }
 
   const sectionsHtml = privacyData.sections
     .map((section, i) => renderSection(section, i + 1))

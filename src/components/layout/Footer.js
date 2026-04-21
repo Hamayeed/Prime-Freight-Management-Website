@@ -5,7 +5,7 @@ export function Footer() {
     <footer class="site-footer">
       <div class="footer-content">
         <div class="footer-brand">
-          <img src="/public/images/Footer-Logo.png" alt="${APP_NAME} Logo" />
+          <img src="/images/Footer-Logo.png" alt="${APP_NAME} Logo" />
           <p>Delivering premium logistics and dispatch support for modern fleets and owner-operators.</p>
         </div>
         

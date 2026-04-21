@@ -1,14 +1,8 @@
 import { Section } from '../ui/Section.js';
 import { Card } from '../ui/Card.js';
+import services from '../../data/services.json';
 
 export async function ServicesPreview({ limit = 0 } = {}) {
-  let services = [];
-  try {
-    const response = await fetch('/src/data/services.json');
-    services = await response.json();
-  } catch (error) {
-    console.error('Failed to load services', error);
-  }
 
   // Modern SaaS SVGs mapping natively
   const svgs = [

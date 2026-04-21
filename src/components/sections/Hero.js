@@ -5,7 +5,7 @@ export function Hero() {
   return `
     <section class="hero" style="
       position: relative;
-      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(6, 23, 17, 0.85) 100%), url('/public/images/Hero.jpeg') center/cover no-repeat;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(6, 23, 17, 0.85) 100%), url('/images/Hero.jpeg') center/cover no-repeat;
       color: var(--text-light); 
       text-align: center; 
       margin-top: -120px;
@@ -24,7 +24,7 @@ export function Hero() {
       "></div>
       
       <div class="container" style="position: relative; z-index: 10; max-width: 800px; margin: 0 auto;">
-        <img src="/public/images/Logo.png" alt="Logo icon" style="height: 128px; margin: 0 auto var(--spacing-lg) auto; opacity: 0.9;" />
+        <img src="/images/Logo.png" alt="Logo icon" style="height: 128px; margin: 0 auto var(--spacing-lg) auto; opacity: 0.9;" />
         <h1 style="font-size: clamp(2.5rem, 5vw, 4rem); margin-bottom: var(--spacing-md); line-height: 1.0; font-weight: 800;">
           Elevate Your Fleet with <br/><span class="text-gradient">${APP_NAME}</span>
         </h1>

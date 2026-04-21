@@ -1,11 +1,7 @@
+import testimonialsData from '../../data/testimonials.json';
+
 export async function TestimonialsStrip() {
-  let testimonials = [];
-  try {
-    const response = await fetch('/src/data/testimonials.json');
-    testimonials = await response.json();
-  } catch (e) {
-    console.error('Failed to load testimonials', e);
-  }
+  const testimonials = testimonialsData;
 
   // Double the testimonials for seamless loop
   const displayItems = [...testimonials, ...testimonials];

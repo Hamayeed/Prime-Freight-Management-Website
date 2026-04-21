@@ -2,6 +2,7 @@ import { Header } from '../components/layout/Header.js';
 import { Footer } from '../components/layout/Footer.js';
 import { CTA } from '../components/sections/CTA.js';
 import { setSEO } from '../utils/seo.js';
+import servicesData from '../data/services.json';
 
 export async function Services() {
   setSEO({ 
@@ -10,13 +11,7 @@ export async function Services() {
     keywords: 'truck dispatch service, freight dispatch, logistics support, load planning'
   });
 
-  let services = [];
-  try {
-    const response = await fetch('/src/data/services.json');
-    services = await response.json();
-  } catch (error) {
-    console.error('Failed to load services', error);
-  }
+  const services = servicesData;
 
   const servicesHtml = services.map((service, index) => {
     // Alternate sides for a broken grid layout
@@ -49,7 +44,7 @@ export async function Services() {
     <main class="services-page-main">
       <!-- Top Hero Banner -->
       <section class="page-hero-section">
-        <div class="page-hero-bg" style="background-image: url('/public/images/services_hero_bg.png');"></div>
+        <div class="page-hero-bg" style="background-image: url('/images/services_hero_bg.png');"></div>
         <div class="page-hero-overlay"></div>
         <div class="container relative z-10">
           <h1 class="page-hero-title">Our <span class="text-gradient">Services</span></h1>
